@@ -51,10 +51,10 @@ router.put("/update/:id", async (req, res) => {
 
 
 //Deletando
-router.delete('/delete/:id', async (req, res) => {
+router.delete("/delete/:id", async (req, res) => {
     await Musica.deleteOne({_id : req.params.id})
     .then(() => {
-        res.status(200).send("Deletado com sucesso!");
+        res.status(200).send("Deletado com sucesso");
     })
     .catch((err) => {
         res.status(400).send("Algo errado com a musica, tente novamente");
