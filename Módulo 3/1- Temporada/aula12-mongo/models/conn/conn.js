@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 // useUnifiedTopology --> Mecanismo de monitoramento de Banco de Dados
 
 function Conn(url, porta, banco){
-    mongoose.connect(`mongodb://${url}:${porta}/${banco}`, {
+    mongoose.connect(`mongodb+srv://dbUser:HylQnUFd51nZVTVb@cluster0.wmu9j.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }).then(()=>{

@@ -15,6 +15,8 @@ router.post('/add', async (req, res) =>{
     })
 });
 // Vizualizando
+// async faz algo funcionar de forma acincrona(Não sincronizada)
+// await espera que a resposta do async para continuar o a leitura do código.
 router.get('/', async (req, res) => {
     await Musica.find({})
     .then((musica) => {
@@ -25,9 +27,20 @@ router.get('/', async (req, res) => {
         console.log(err);
     })
 });
-//Vizualizando por ID
+//Vizualizando por Nome
 router.get('/findByName/:name', async (req, res) => {
     await Musica.find({nome : req.params.name})
+    .then((musica) => {
+        res.send(musica);
+    })
+    .cacth((err)=> {
+        res.status(400).send("Algo de errado não está certo!");
+        console.log(err);
+    })
+});
+//Vizualizando por ID
+router.get('/findByid/:id', async (req, res) => {
+    await Musica.find({nome : req.params.id})
     .then((musica) => {
         res.send(musica);
     })

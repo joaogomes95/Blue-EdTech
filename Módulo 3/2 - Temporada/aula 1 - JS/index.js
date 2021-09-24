@@ -1,3 +1,9 @@
+//   Desafio 1: Precisamos de uma lista somente com os nomes dos 
+//   diretores de cada filme representado na nossa lista de filmes acima. 
+//   Crie uma função de nome "getAllDirectorsNames" que receberá um array de filmes como 
+//   ARGUMENTO, para então retornar esta lista de nomes. 
+//   Caso o array esteja vazio, a função deverá retornar null.
+
 const movies = [
     {
       title: 'The Shawshank Redemption',
@@ -41,9 +47,27 @@ const movies = [
     },
   ];
 
+function getAllDirectorsNames(moviesList){
 
-//   Desafio 1: Precisamos de uma lista somente com os nomes dos 
-//   diretores de cada filme representado na nossa lista de filmes acima. 
-//   Crie uma função de nome "getAllDirectorsNames" que receberá um array de filmes como 
-//   ARGUMENTO, para então retornar esta lista de nomes. 
-//   Caso o array esteja vazio, a função deverá retornar null.
+    if (moviesList.length === 0){ 
+        return null;
+    }
+
+    const listaDeNomes = moviesList.map((cadaFilme)=>{        
+        return cadaFilme.director;
+    })
+
+    return listaDeNomes;
+}
+
+
+console.log(getAllDirectorsNames(movies));
+console.log(getAllDirectorsNames([]));
+
+// Desafio 2: Crie uma função "findMoviesByDirector" que receberá como argumento uma String com o nome de um Diretor, 
+//e ela deverá retornar uma lista FILTRADA (olha a dica ;-D) contendo somente o NOME dos filmes que foram dirigidos por este diretor.
+// Caso Não seja encontrado nenhum filme com o nome do diretor informado, 
+//devemos retornar a seguinte String: "Nenhum filme encontrado para o diretor <NOME_DO_DIRETOR>"
+// Ex: findMoviesByDirector('Henrique Mendes') ---> 'Nenhum filme encontrado para o diretor Henrique Mendes'
+
+//https://github.com/henriquegmendes
