@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <title>Meus Filmes Favoritos</title>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">Meus Filmes Favoritos</nav>
+
+
+    <form class="row g-3 form-js">
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control js-nome" id="nome" placeholder="Digite o nome do filme">
+        </div>
+        <div class="col-md-6">
+          <label for="imagem" class="form-label">Imagem</label>
+          <input type="text" class="form-control js-imagem" id="imagem" placeholder="Digite a URL da imagem">
+        </div>
+        <div class="col-md-6">
+            <label for="genero" class="form-label">Gênero</label>
+            <input type="text" class="form-control js-genero" id="genero" placeholder="Digite o gênero do filme">
+          </div>
+          <div class="col-md-6">
+            <label for="nota" class="form-label">Nota</label>
+            <input type="text" class="form-control js-nota"  id="nota" placeholder="Dê uma nota de 0 a 10">
+          </div>
+        
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Cadatrar</button>
+        </div>
+      </form>
+      <p></p>
+      <p></p>
+    
+      <div class="card-filme" id="lista">
+
+      </div>
+        <!-- <div class="card" style="width: 18rem;">
+            <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/07/pantera-negra-1200x900-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Pantera Negra</h5>          
+                </div>
+                <ul class="list-group list-group-flush">
+                    <label>Gênero:</label>
+                    <li class="list-group-item">Ação</li>
+                    <label>Nota:</label> 
+                    <li class="list-group-item">10</li>           
+                </ul>
+            <div class="card-body">
+                <button type="" class="btn btn-primary">Editar</button>
+                <button type="" class="btn btn-danger">Deletar</button>
+            </div>         -->
+        </div>  
+
+     
+        <footer class="bg-primary text-center text-white">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+        
+              <!-- Twitter -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+        
+              <!-- Google -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-google"></i
+              ></a>
+        
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+        
+              <!-- Linkedin -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+        
+              <!-- Github -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-github"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <!-- Grid container -->
+        
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:            
+          </div>
+          <!-- Copyright -->
+        </footer>
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "vagas": [
+    {
+      "id": 1,
+      "titulo": "Desenvolvedor Front-End",
+      "descriçao": "React, html, javascript, css",
+      "salario": "R$4.000",
+      "senioridade": "Junior"
+    },
+    {
+      "id": 2,
+      "titulo": "Desenvolvedor Front-End",
+      "descriçao": "React, html, javascript, css, node",
+      "salario": "R$5.000",
+      "senioridade": "Full Stack"
+    }
+  ]
+}
