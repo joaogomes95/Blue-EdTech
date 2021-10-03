@@ -97,6 +97,7 @@ const submitForm = async (evento) => {
 
   lista.innerHTML = '';
 
+  edicao = false;
 }
 
 
@@ -127,6 +128,8 @@ const putFilme = async (id) => {
   generoEl.value = filme.genero;
   imagemEl.value = filme.imagem;
   notaEl.value = filme.nota; 
+
+  
 }
 
 
