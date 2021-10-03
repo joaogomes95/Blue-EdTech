@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-var FormData = require('form-data');
+
 
 // Array que contém as informações do filme
 const filmes = [
@@ -32,12 +32,7 @@ router.get('/:id', (req, res) =>{
 router.put('/:id', (req, res) => {
     const filmeEdit = req.body;
     const id = req.params.id;
-    let filmePreCadastrado = filmes.find((filme) => filme.id == id);
-
-    // filmePreCadastrado = {
-    //     ...filmePreCadastrado,
-    //     ...filmeEdit
-    // }
+    let filmePreCadastrado = filmes.find((filme) => filme.id == id);  
     
     filmePreCadastrado.nome = filmeEdit.nome;
     filmePreCadastrado.genero = filmeEdit.genero;

@@ -4,6 +4,7 @@ let edicao = false;
 let idEdicao = 0;
 
 
+
 // Get para ver todas a vagas cadastradas.
 const getFilmes = async () => {
   const response = await fetch(urlApi); // requisição (GET) para API
@@ -13,10 +14,10 @@ const getFilmes = async () => {
 
 
 // Listando o Array
-  data.map((filme) => {
+data.map((filme) => {
     lista.insertAdjacentHTML('beforeend', `
       <div class="card" style="width: 18rem;">
-        <img src="${filme.imagem}" class="card-img-top" alt="...">
+        <img src=${filme.imagem} class="card-img-top" alt="...">
           <div class="card-body">
           <h5 class="card-title">${filme.nome}</h5>          
           </div>
@@ -75,7 +76,7 @@ const submitForm = async (evento) => {
     const request = new Request (`${urlApi}/${idEdicao}`, {
       method: 'PUT',
       body: JSON.stringify(filme),
-      headers: new headers({
+      headers: new Headers({
         'Content-Type': 'application/json'
       })
     })
