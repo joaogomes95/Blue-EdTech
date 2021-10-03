@@ -11,7 +11,8 @@
     <nav class="navbar navbar-light bg-primary">Meus Filmes Favoritos</nav>
 
 
-    <form class="row g-3 form-js">
+    <form class="row g-3 form-js" onsubmit="submitForm(event)" id="form">
+        
         <div class="col-md-6">
           <label for="nome" class="form-label">Nome</label>
           <input type="text" class="form-control js-nome" id="nome" placeholder="Digite o nome do filme">
@@ -23,11 +24,12 @@
         <div class="col-md-6">
             <label for="genero" class="form-label">Gênero</label>
             <input type="text" class="form-control js-genero" id="genero" placeholder="Digite o gênero do filme">
-          </div>
+        </div>
           <div class="col-md-6">
             <label for="nota" class="form-label">Nota</label>
             <input type="text" class="form-control js-nota"  id="nota" placeholder="Dê uma nota de 0 a 10">
           </div>
+        
         
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Cadatrar</button>
@@ -38,7 +40,7 @@
     
       <div class="card-filme" id="lista">
 
-      </div>
+      
         <!-- <div class="card" style="width: 18rem;">
             <img src="https://observatoriodocinema.uol.com.br/wp-content/uploads/2021/07/pantera-negra-1200x900-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -54,7 +56,7 @@
                 <button type="" class="btn btn-primary">Editar</button>
                 <button type="" class="btn btn-danger">Deletar</button>
             </div>         -->
-        </div>  
+      </div>  
 
      
         <footer class="bg-primary text-center text-white">
@@ -106,6 +108,6 @@
     
 
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

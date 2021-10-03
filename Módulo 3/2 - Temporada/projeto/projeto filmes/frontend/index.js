@@ -36,9 +36,9 @@ const getFilmes = async () => {
 getFilmes();
 
 const submitForm = async (evento) => {
-
+  
   evento.preventDefault();
-
+  console.log('clicou aqui!');
   let nome = document.getElementById('nome');
   let genero = document.getElementById('genero');
   let imagem = document.getElementById('imagem');
@@ -129,7 +129,7 @@ const putFilme = async (id) => {
 }
 
 
-// Deletes 
+// Delete
 const deleteFilme = async (id) => {
   const request = new Request (`${urlApi}/${id}`,{
     method: 'DELETE',   

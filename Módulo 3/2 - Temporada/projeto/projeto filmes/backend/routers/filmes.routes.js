@@ -1,5 +1,6 @@
 const express = require('express');
 const router = express.Router();
+var FormData = require('form-data');
 
 // Array que contém as informações do filme
 const filmes = [
