@@ -27,6 +27,10 @@ data.map((filme) => {
             <label>Nota:</label> 
             <li class="list-group-item">${filme.nota}</li>           
         </ul>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Assistido</label>
+        </div>
         <div class="card-body">
           <button type="button " class="btn btn-primary" onclick="putFilme(${filme.id})">Editar</button>
           <button type="button" class="btn btn-danger" onclick="deleteFilme(${filme.id})">Deletar</button>
