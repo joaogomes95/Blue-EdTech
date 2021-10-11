@@ -1,0 +1,21 @@
+[
+  {
+    "nome": "Pantera Negra",
+    "genero": "Ação",
+    "nota": "10",
+    "imagem": "https://www.comboinfinito.com.br/principal/wp-content/uploads/2019/08/pantera-negra.jpg"
+  },
+
+  {
+    "nome": "Homem de Ferro",
+    "genero": "Ação",
+    "nota": "10",
+    "imagem": "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/05/homem-de-ferro-iron-man.jpeg"
+  },
+  {
+    "nome": "Avengers",
+    "genero": "Ação",
+    "nota": "10",
+    "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/9/9b/Avengers_Endgame.jpg/250px-Avengers_Endgame.jpg"
+  }
+]

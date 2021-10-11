@@ -32,8 +32,8 @@ data.map((filme) => {
           <label class="form-check-label" for="flexSwitchCheckDefault">Assistido</label>
         </div>
         <div class="card-body">
-          <button type="button " class="btn btn-primary" onclick="putFilme(${filme.id})">Editar</button>
-          <button type="button" class="btn btn-danger" onclick="deleteFilme(${filme.id})">Deletar</button>
+          <button type="button " class="btn btn-primary" onclick="putFilme('${filme._id}')">Editar</button>
+          <button type="button" class="btn btn-danger" onclick="deleteFilme('${filme._id}')">Deletar</button>
         </div>           
     `)
   })
