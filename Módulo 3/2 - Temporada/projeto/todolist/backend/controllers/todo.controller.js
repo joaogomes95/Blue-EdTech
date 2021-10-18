@@ -7,7 +7,7 @@ const TodoService = new TodosService();
 class TodoController {
 
     getTodos = async (req, res) => {
-        const todo = await TodoService.findAll();
+        const todo = await TodoService.findALL();
         res.send(todo);
     }
 
@@ -31,14 +31,14 @@ class TodoController {
 
     createTodo = async (req, res) => {
         const todo = req.body;
-        const todoSalvo = await TodoService.createTodos(todo);
+        const todoSalvo = await TodoService.createTodo(todo);
         res.send({message:`Tarefa ${todoSalvo.nome} criada com sucesso!`});
     };
 
     putTodo = async (req, res) => {
         const id = req.params.id
         const todo = req.body;
-        await TodoService.putTodos(id, todo)
+        await TodoService.putTodo(id, todo)
         res.send({message: `Tarefa atualizada com sucesso!`});
     }
 

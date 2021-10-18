@@ -16,7 +16,7 @@ app.use(cors());
 const Conn = require('./conn/conn');
 Conn();
 
-app.use('/', TodoRoutes);
+app.use('/todo', TodoRoutes);
 
 const port = 3002;
 app.listen(port, () => {

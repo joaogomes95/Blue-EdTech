@@ -8,15 +8,15 @@ class TodoService{
         return await Todo.findById(id);
     }
 
-    createTodos = async (todo) => {
+    createTodo = async (todo) => {
         return await Todo.create(todo);
     }
 
-    putTodos = async (id, todo) => {
+    putTodo = async (id, todo) => {
         return await Todo.updateOne({ _id: id}, todo);
     }
 
-    deleteTodos = async (id) => {
+    deleteTodo = async (id) => {
         return await Todo.deleteOne({ _id: id});
     }
 
